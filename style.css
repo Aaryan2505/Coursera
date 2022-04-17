@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrappar{
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+}
+header{
+    text-align: center;
+    font-size: 25px;
+}
+h4{
+    text-align: right;
+}
+.columns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin:5px 0;
+}
+.column{
+    flex: 1;
+    border: 1px solid;
+    margin: 2px;
+    padding: 10px;
+    background-color: grey;
+}
+@media (max-width:992px) {
+    .columns .column{
+margin-bottom: 5px;
+flex-basis: 40%;
+    }
+}
+@media (max-width:767px) {
+    .columns .column{
+margin:0 0 5px 0;
+flex-basis: 100%;
+    }
+}
